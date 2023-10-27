@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Recuperacion</title>
+		<link rel="stylesheet" type="text/css" href="CuentaEstilo.css">
+		<script>
+			function Mensaje() {
+				var nombre = document.getElementById("Correo").value;
+				alert("Se ha enviado un codigo de recuperacion a su correo electronico");
+			}
+		</script>
+	</head>
+	<body background="modern-background-with-black-and-red-lines-free-vector.jpg"style="background-repeat: no-repeat; background-attachment: fixed;  background-position: center center; background-size: cover;">
+		<section class="form-register">
+			<h4>Recuperacion</h4>
+			<input class="Controls" type="text" name="Correo" id="Correo" placeholder="Ingrese su Correo electronico">
+			<input class="botons" type="submit" onclick="Mensaje()" name="Enviar">
+		</section>
+		<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+	</body>
+</html>

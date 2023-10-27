@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autos</title>
+    <link rel="stylesheet" type="text/css" href="Miestilo13.css">
+    <script>
+     function MensajeC() {
+            var nombre = document.getElementById("boton").value;
+            alert("El vendedor se pondra en contacto con usted pronto");
+        }
+    </script>
+</head>
+    <header>
+		<div id="Inicio" class="logo">
+			<img src="https://drive.google.com/uc?export=download&id=1FsMdN08WwolK6jXZFp9fgMudlrW5kRWL" width="248" height="144" align="">
+		</div>
+		<nav>
+			<a href="Inicio.html" class="nav-link">Inicio</a>
+			<a href="Autos.html" class="nav-link">Autos</a>
+			<a href="Refacciones.html" class="nav-link">Refacciones</a>
+            <a href="http://localhost/Comentarios/prueba/correo.php" class="nav-link">Comentarios</a>
+			<a href="Atencion a clientes.html" class="nav-link">Atencion a Clientes</a><br>
+		</nav>
+		<script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+	</header>
+<body background="modern-background-with-black-and-red-lines-free-vector.jpg"style="background-repeat: no-repeat; background-attachment: fixed;  background-position: center center; background-size: cover;">
+			<div class="SeccionM">
+                <center>
+                <h1 style="color: whitesmoke"><br>Todos nuestros Autos:</h1>
+                </center>
+			<div class="contenido">
+                <h2 colorfont: white><br>Autos comunes:</h2>
+			 <section class="contenido">
+        	<div class="mostrador" id="mostrador">
+            <div class="fila">
+                <div class="item"  onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="373-3737225_gmc-terrain-2016-silver-hd-png-download-removebg-preview.png" alt="">
+                    </div>
+                    <p class="descripcion"> Nissan Altima 2012</p>
+                    <span class="precio">$ 120,000 </span>
+                </div>
+                <div  class="item"  onclick="cargar(this)">
+                    <div class="contenedor-foto"><br>
+                        <img src="5ae04ad4048d3ea10a356a36c26a8088--ford-focus-sedans-removebg-preview.png" alt="">
+                    </div>
+                    <p class="descripcion" id> Ford Focus 2014 </p>
+                    <span class="precio">$ 110,000</span>
+                </div>
+                <div class="item"  onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="2008-dodge-charger-4-door-sedan-srt8-rwd-angular-front-exterior-view_100267604_l-removebg-preview.png" alt="">
+                    </div>
+                    <p class="descripcion"> Dodge Charger 2008
+                    </p>
+                    <span class="precio">$ 99,000</span>
+                </div>
+                <div class="item"  onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="png-transparent-2007-nissan-sentra-2009-nissan-sentra-2012-nissan-sentra-car-nissan-compact-car-sedan-car-removebg-preview.png" alt="">
+                    </div>
+                    <p class="descripcion"> Nissan Sentra 2012</p>
+                    <span class="precio">$ 105,000</span>
+                </div>
+            	</div>
+            	<div class="fila">
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto"><br>
+                        <img src="png-transparent-2015-chrysler-200-limited-car-2015-chrysler-200-s-ram-pickup-car-compact-car-sedan-car-removebg-preview.png" alt="">
+                    </div>
+                    <p class="descripcion">Crysler 200 2015</p>
+                    <span class="precio">$ 150,000</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="kisspng-2015-kia-optima-kia-motors-car-2018-kia-optima-5b075133b56590.936205591527206195743-removebg-preview.png" alt="">
+                    </div>
+                    <p class="descripcion">Kia Optima 2015</p>
+                    <span class="precio">$ 180,000</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="imgbin-honda-accord-2018-honda-civic-2017-honda-civic-car-honda-W8qXkTuyHCKi29mcL0nrL6jn3-removebg-preview.png" alt="">
+                    </div>
+                    <p class="descripcion"><br>Honda Civic 2018</p>
+                    <span class="precio">$ 190,000</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="CCHI_uXWEAA67WZ-removebg-preview.png" alt="">
+                    </div>
+                    <p class="descripcion">Chevrolet Malibu 2015</p>
+                    <span class="precio">$ 123,000</span>
+                </div>
+            </div> 
+        	</div>
+        	<div class="seleccion" id="seleccion">
+            <div class="cerrar" onclick="cerrar()">
+                &#x2715
+            </div>
+            <div class="info">
+                <img src="img/1.png" alt="" id="img">
+                <h2 id="modelo">Nissan Altima 2012</h2><br>
+                <p id="descripcion">Descripción Modelo 1</p><br>
+
+                <span class="precio" id="precio">$ 120,000</span>
+
+                <div class="fila">
+                    <div class="size">
+                    </div>
+                    <button onclick="MensajeC()" id="boton">Comprar</button>
+                </div>
+            </div>
+        	</div>
+
+    		</section>
+		</div><br<br><br><br><br><br><br><br>
+        <div class="SeccionM2">
+			<div class="contenido">
+			<h2><br>Autos menos comunes:</h2>
+			 <section class="contenido">
+        	<div class="mostrador" id="mostrador">
+            <div class="fila">
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="fe51b5c7-478b-4bbe-a8df-6953d8de0112.webp" alt="">
+                    </div>
+                    <p class="descripcion"> Toyota Cambry 2013</p>
+                    <span class="precio">$ 100,000 </span>
+                </div>
+                <div  class="item"  onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="honda_16crvtouring4a_angularfront.png" alt="">
+                    </div>
+                    <p class="descripcion"><br>Honda CR-V 2016</p>
+                    <span class="precio">$ 190,000</span>
+                </div>
+                <div class="item"  onclick="cargar(this)">
+                    <div class="contenedor-foto"><br>
+                        <img src="61Oa-VFqBgL._AC_UF894_1000_QL80_-removebg-preview.png" alt="">
+                    </div>
+                    <p class="descripcion"><br> Ford Mustang 2012
+                    </p>
+                    <span class="precio">$ 175,000</span>
+                </div>
+                <div class="item"  onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="Chevrolet-Camaro-PNG-Transparent.png" alt="">
+                    </div>
+                    <p class="descripcion">Chevrolet Camaro 2014</p>
+                    <span class="precio">$ 180,000</span>
+                </div>
+            	</div>
+            	<div class="fila">
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="GMC-Sierra-Denali-2014-05-removebg-preview.png" alt="">
+                    </div>
+                    <p class="descripcion">GMC Sierra 2014</p>
+                    <span class="precio">$ 250,000</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="INDIGO-BLUE-1-removebg-preview.png" alt="">
+                    </div>
+                    <p class="descripcion">Dodge Charger 2017</p>
+                    <span class="precio">$ 160,000</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="honda-accord-B-removebg-preview.png" alt="">
+                    </div>
+                    <p class="descripcion">Honda Accord 2017</p>
+                    <span class="precio">$ 200,000</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="2016_dodge_challenger-pic-8075550709434507094-1024x768-removebg-preview.png" alt="">
+                    </div>
+                    <p class="descripcion">Dodge Challenger 2016</p>
+                    <span class="precio">$ 210,000</span>
+                </div>
+            </div> 
+        	</div>
+    		</section>
+		</div><br<br><br><br><br><br><br>
+        <div align="center" class="contenedor-botones">
+        <button class="boton"><a href="Inicio.html"><span>Volver a la Pagina Principal</span></a></button>
+        </div>
+    <script src="script.js"></script>
+
+    </div><br><br>
+
+    <footer>
+        <div class="container__footer">
+            <div class="box__footer">
+                <div class="logo">
+                    <img src="https://drive.google.com/uc?export=download&id=1FsMdN08WwolK6jXZFp9fgMudlrW5kRWL" alt="">
+                </div>
+                <div class="terms">
+          
+                    <p>Recuerde que nuestro equipo está siempre disponible para responder cualquier pregunta o inquietud que pueda tener en el futuro. Si necesita servicio de mantenimiento para su vehículo, también puede acudir a nosotros, ya que ofrecemos servicios de reparación y mantenimiento para mantener su automóvil en óptimas condiciones.</p>
+                </div>
+            </div>
+            <div class="box__footer">
+                <h2>Soluciones</h2>
+                <a href="Inicio.html">Mas Informacion</a>
+                <a href="https://dpremium-iuv.iebschool.com/">App Marketing</a>
+                <a href="https://play.google.com/store/games?hl=es_MX&gl=US&pli=1">Google Play</a>
+                <a href="https://www.autozone.com/">Preguntas</a>
+            </div>
+
+            <div class="box__footer">
+                <h2>Compañia</h2>
+                <a href="Inicio.html">Acerca de</a>
+                <a href="Inicio.html">Trabajos</a>
+                <a href="Inicio.html">Procesos</a>
+                <a href="Inicio.html">Servicios</a>         
+            </div>
+
+            <div class="box__footer">
+                <h2>Redes Sociales</h2>
+                <a href="https://www.facebook.com/"> <i class="fab fa-facebook-square"></i> Facebook</a>
+                <a href="https://twitter.com/"><i class="fab fa-twitter-square"></i> Twitter</a>
+                <a href="https://www.tiktok.com/"><i class="fab fa-tiktok"></i> Tik Tok</a>
+                <a href="https://www.instagram.com/"><i class="fab fa-instagram-square"></i> Instagram</a>
+            </div>
+
+        </div>
+
+        <div class="box__copyright">
+            <hr>
+            <p>Todos los derechos reservados © 2023 <b>FortCars Obregon</b></p>
+        </div>
+    </footer>
+
+    
+</body>
+</html>
